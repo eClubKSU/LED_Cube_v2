@@ -41,14 +41,14 @@ struct Config {
         // Only serialize animation to disk
         uint8_t animation = 0;
         struct {
-            float runtime = 15.0f;
+            float runtime = 5.0f;
             float radius = 7.5f;
             uint8_t brightness = 255;
             uint8_t motionBlur = 220;
         } accelerometer;
         struct {
             float starttime = 5.0f;
-            float runtime = 15.0f;
+            float runtime = 30.0f;
             float endtime = 3.0f;
             float angle_speed = -180.0f;
             float radius = 7.5f;
@@ -60,7 +60,7 @@ struct Config {
         } arrows;
         struct {
             float starttime = 5.0f;
-            float runtime = 30.0f;
+            float runtime = 15.0f;
             float endtime = 3.0f;
             float angle_speed = 120.0f;
             float radius = 7.5f;
@@ -83,7 +83,7 @@ struct Config {
             uint8_t motionBlur = 0;
         } cube;
         struct {
-            float runtime = 30.0f;
+            float runtime = 20.0f;
             float radius = 7.5f;
             uint8_t brightness = 255;
             uint8_t motionBlur = 220;
@@ -102,22 +102,11 @@ struct Config {
             uint8_t motionBlur = 230;
         } helix;
         struct {
-            float runtime = 30.0f;
+            float runtime = 20.0f;
             float interval = 0.20f;
             uint8_t brightness = 255;
             uint8_t motionBlur = 0;
         } life;
-        struct {
-            float starttime = 5.0f;
-            float runtime = 30.0f;
-            float endtime = 3.0f;
-            float interval = 0.15f;
-            float angle_speed = -70.0f;
-            float radius = 7.5f;
-            float radius_start = 1.0f;
-            uint8_t brightness = 200;
-            uint8_t motionBlur = 220;
-        } mario;
         struct {
             float starttime = 5.0f;
             float runtime = 30.0f;
@@ -134,30 +123,12 @@ struct Config {
         } plasma;
         struct {
             float starttime = 2.0f;
-            float runtime = 30.0f;
+            float runtime = 10.0f;
             float endtime = 2.0f;
             int8_t hue_speed = 25;
             uint8_t brightness = 200;
             uint8_t motionBlur = 200;
         } pong;
-        struct {
-            float starttime = 0.5f;
-            float runtime = 30.0f;
-            float endtime = 2.0f;
-            float rotation_speed = 90.0f;
-            float radius = 15.0f;
-            uint8_t brightness = 200;
-            uint8_t motionBlur = 220;
-        } arc_scroller;
-        struct {
-            float starttime = 0.5f;
-            float runtime = 30.0f;
-            float endtime = 2.0f;
-            float interval = 0.1f;
-            int8_t hue_speed = -50;
-            uint8_t brightness = 255;
-            uint8_t motionBlur = 220;
-        } box_scroller;
         struct {
             float starttime = 5.0f;
             float runtime = 30.0f;
@@ -171,7 +142,7 @@ struct Config {
         } sinus;
         struct {
             float starttime = 5.0f;
-            float runtime = 30.0f;
+            float runtime = 10.0f;
             float endtime = 5.0f;
             int8_t hue_speed = -25;
             uint8_t brightness = 200;
@@ -188,7 +159,7 @@ struct Config {
             uint8_t motionBlur = 230;
         } starfield;
         struct {
-            float runtime = 30.0f;
+            float runtime = 20.0f;
             float interval = 0.1f;
             float fade_in_speed = 1.0f;
             float fade_out_speed = 2.0f;

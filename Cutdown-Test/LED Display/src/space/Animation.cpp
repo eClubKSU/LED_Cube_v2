@@ -38,20 +38,20 @@ uint16_t Animation::animation_sequence = 0;
  Cube cube;
 //To Remove animations, comment from this list ~ Grace
 Animation *Animations[] = {
-	//&atoms,
-	//&sinus,    
-	//&starfield, 
-	//&fireworks1,                   
-	//&fireworks2,
-    	//&twinkels, 
-	//&helix,
 	&arrows,
-        //&plasma,        
-	//&life,     
+	&atoms,
+	&cube,
+	&fireworks1,                   
+	&fireworks2,
+	&helix,
+	&life,     
+	&sinus,    
+	&starfield, 
 	//&pong,      
 	//&spectrum,
-        &accelerometer,
-	//&cube
+    	&twinkels, 
+        &plasma,        
+        //&accelerometer,
 	};
 
 const uint8_t ANIMATIONS = sizeof(Animations) / sizeof(Animation *);
