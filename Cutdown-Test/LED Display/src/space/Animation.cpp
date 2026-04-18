@@ -22,37 +22,37 @@ uint16_t Animation::animation_sequence = 0;
 /*------------------------------------------------------------------------------
  * ANIMATION GLOBAL DEFINITIONS
  *----------------------------------------------------------------------------*/
- Accelerometer accelerometer;
- Arrows arrows;
- Atoms atoms;
- Fireworks fireworks1;
- Fireworks fireworks2;
- Helix helix;
- Life life;
- Plasma plasma;
- Pong pong;
- Sinus sinus;
- Spectrum spectrum;
- Starfield starfield;
- Twinkels twinkels;
- Cube cube;
-//To Remove animations, comment from this list ~ Grace
+Accelerometer accelerometer;
+Arrows arrows;
+Atoms atoms;
+Fireworks fireworks1;
+Fireworks fireworks2;
+Helix helix;
+Life life;
+Plasma plasma;
+Pong pong;
+Sinus sinus;
+Spectrum spectrum;
+Starfield starfield;
+Twinkels twinkels;
+Cube cube;
+// To Remove animations, comment from this list ~ Grace
 Animation *Animations[] = {
-	&arrows,
-	&atoms,
-	&cube,
-	&fireworks1,                   
-	&fireworks2,
-	&helix,
-	&life,     
-	&sinus,    
-	&starfield, 
-	//&pong,      
-	//&spectrum,
-    	&twinkels, 
-        &plasma,        
-        //&accelerometer,
-	};
+    &arrows,
+    &atoms,
+    &cube,
+    &fireworks1,
+    &fireworks2,
+    &helix,
+    &life,
+    &sinus,
+    &starfield,
+    //&pong,
+    //&spectrum,
+    //&twinkels,
+    &plasma,
+    //&accelerometer,
+};
 
 const uint8_t ANIMATIONS = sizeof(Animations) / sizeof(Animation *);
 /*----------------------------------------------------------------------------*/
